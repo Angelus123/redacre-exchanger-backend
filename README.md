@@ -1,7 +1,7 @@
 # Izere-Ange-Felix
 Izere Ange Felix - Junior FS Developer - Redacre tech test 
 ## BACKEND SIDE
-![Repository](https://github.com/Angelus123/redacre-exchanger-backend)
+![Repository]("https://github.com/Angelus123/redacre-exchanger-backend/assets/swagger_documentation.PNG")
 
 ### Technology tools used in this Project
 * Continuous integration : **GitHub Action**
@@ -24,10 +24,12 @@ $ Move into backend folder
 $ cd backend
 ```
 Add the following environment valiable:
-```PORT=4000
+
+```
+   PORT=4000
    DATABASE_URL=mongodb+srv:--- mongoDB link
    TEST_URL=mongodb+srv:--- Testing Link
-
+```
 Install dependincies in package.json file by:
 
 ```
