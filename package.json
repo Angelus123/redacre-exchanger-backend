@@ -1,0 +1,64 @@
+{
+  "name": "izere-ange-felix",
+  "version": "1.0.0",
+  "description": "Test for FS developer backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "better-npm-run test",
+    "dev": "better-npm-run dev",
+    "start": "node src/server.js",
+    "build": "src -d dist"
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "nodemon --exec nodemon ./src/server",
+      "env": {
+        "PORT": 3000,
+        "NODE_ENV": "development"
+      }
+    },
+    "prod": {
+      "command": "node ./dist/server",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 8000
+      }
+    },
+    "test": {
+      "command": "mocha ./__test__/*test.js --timeout 20000 --exit",
+      "env": {
+        "NODE_ENV": "test",
+        "PORT": 4000
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redacreltdcom/Izere-Ange-Felix.git"
+  },
+  "author": "Angelus123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redacreltdcom/Izere-Ange-Felix/issues"
+  },
+  "homepage": "https://github.com/redacreltdcom/Izere-Ange-Felix#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "better-npm-run": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2",
+    "swagger-ui-express": "^4.3.0",
+    "validator": "^13.7.0"
+  }
+}
